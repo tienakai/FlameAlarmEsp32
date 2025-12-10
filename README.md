@@ -37,7 +37,7 @@ DS18B20 → ESP32 GPIO5\
 Buzzer → ESP32 GPIO25\
 LED → ESP32 GPIO33\
 Relay (bơm) → ESP32 GPIO12\
-![Sơ đồ cắm trên Fritzing] (image/B00488BF-1D7A-434D-8DB3-7C7A5FFD421D.png)
+![Sơ đồ cắm trên Fritzing](image/sodomach.png)
 ## 4. Kiến trúc hoạt động
 
 \[Sensors\] → \[ESP32 xử lý dữ liệu\] → (Buzzer + LED, Relay, MQTT
