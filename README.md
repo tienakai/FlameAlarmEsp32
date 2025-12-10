@@ -13,6 +13,7 @@ Dự án xây dựng hệ thống cảnh báo cháy IoT có khả năng:
 -   Phun nước tự động khi cháy
 -   Gửi dữ liệu cảm biến lên MQTT Cloud
 -   Điều khiển còi/bơm từ xa qua Internet
+-   Gửi cảnh báo qua email qua Node-RED
 
 Hệ thống sử dụng ESP32, ưu điểm: rẻ, mạnh, WiFi tích hợp, dễ mở rộng.
 
@@ -23,9 +24,9 @@ Hệ thống sử dụng ESP32, ưu điểm: rẻ, mạnh, WiFi tích hợp, d�
 -   Flame IR --- cảm biến lửa
 -   DS18B20 --- cảm biến nhiệt độ
 -   Relay 1 kênh điều khiển bơm
--   Máy bơm mini 5--12V
+-   Máy bơm mini 5
 -   Buzzer + LED cảnh báo
--   Nguồn 5V -- 12V tùy thiết bị
+-   Nguồn 3.3V - 5V tùy thiết bị
 
 ## 3. Sơ đồ kết nối
 
@@ -36,7 +37,7 @@ DS18B20 → ESP32 GPIO5\
 Buzzer → ESP32 GPIO25\
 LED → ESP32 GPIO33\
 Relay (bơm) → ESP32 GPIO12
-
+![Sơ đồ cắm trên Fritzing] (image/{B00488BF-1D7A-434D-8DB3-7C7A5FFD421D}.png)
 ## 4. Kiến trúc hoạt động
 
 \[Sensors\] → \[ESP32 xử lý dữ liệu\] → (Buzzer + LED, Relay, MQTT
@@ -50,17 +51,16 @@ Cloud)
 
 Topic: flame-alarm-sensor
 
-## 6. JSON Format
+## 6. Node‑RED Flow & Email Alert
+Node-RED được dùng để:
+-   Nhận dữ liệu từ MQTT 
+-   Kiểm tra xem cảm biến có báo cháy hay không
+-   Gửi email cảnh báo tự động khi phát hiện cháy 
 
-### Dữ liệu cảm biến gửi lên MQTT:
-
-{ "type": "sensor", "mq2_adc": 750, "flame": false, "temp": 32.5, "hum":
-70 }
-
-### Lệnh điều khiển gửi từ Cloud xuống:
-
-{ "type": "cmd", "alarm": "on" }
-
+Node-RED có thể gửi email:
+-   Nội dung cảnh báo
+-   Trạng thái cảm biến 
+-   Thời gian xảy ra cảnh báo 
 ## 7. Demo
 
 -   Video: /video/demo.mp4
@@ -101,7 +101,8 @@ Hệ thống hoạt động ổn định và hiệu quả:
 -   Tự động kích hoạt còi + đèn
 -   Tự bật bơm phun nước
 -   Truyền dữ liệu lên cloud theo thời gian thực
+-   Gửi được cảnh báo về email
 -   Chi phí thấp -- dễ lắp đặt -- dễ mở rộng
 
-Hướng phát triển: - Tích hợp Camera AI nhận diện cháy - Thêm kết nối 4G
-để dự phòng WiFi - Tạo app Flutter điều khiển và giám sát
+Hướng phát triển: - Tích hợp Camera AI nhận diện cháy 
+                  - Tích hợp LoRa / 4G để hoạt động không cần WiFi
