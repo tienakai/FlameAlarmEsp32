@@ -1,0 +1,430 @@
+[
+    {
+        "id": "05ce4787fe5d83e8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a54f9cb56e2e46bb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "4158db786b55496d9d8e6a655d408e16.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "df0bf498d8d0f3ca",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "694f070a841fba01",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a232442e74cce007",
+        "type": "ui_group",
+        "name": "cảnh_báo_cháy",
+        "tab": "df0bf498d8d0f3ca",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c35f3ae0a04f50b5",
+        "type": "mqtt in",
+        "z": "05ce4787fe5d83e8",
+        "name": "HiveMQ",
+        "topic": "flame-alarm-sensor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "a54f9cb56e2e46bb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "bb6cee266521b4c3",
+                "13cf73a135a94754",
+                "90d2a61b89c372bc",
+                "894dfcc8555154c3",
+                "b0a0ef597a799a0a",
+                "cb079cb9cf2d7dcc"
+            ]
+        ]
+    },
+    {
+        "id": "bb6cee266521b4c3",
+        "type": "function",
+        "z": "05ce4787fe5d83e8",
+        "name": "function 1",
+        "func": "msg.payload = msg.payload.temp;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "238d296c5b9a7af0"
+            ]
+        ]
+    },
+    {
+        "id": "13cf73a135a94754",
+        "type": "function",
+        "z": "05ce4787fe5d83e8",
+        "name": "function 2",
+        "func": "if (typeof msg.payload === 'string') {\n    msg.payload = JSON.parse(msg.payload);\n}\n\nif (msg.payload.type === \"sensor\") {\n    let flame = msg.payload.flame;\n    if (flame === true) msg.payload = 1;\n    else msg.payload = 0;\n} else {\n    msg.payload = 0; // Hoặc return null nếu không muốn xử lý\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 260,
+        "wires": [
+            [
+                "fb63486bc0e5996e"
+            ]
+        ]
+    },
+    {
+        "id": "90d2a61b89c372bc",
+        "type": "function",
+        "z": "05ce4787fe5d83e8",
+        "name": "function 3",
+        "func": "msg.payload = msg.payload.mq2_adc;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "949450cb1b3ae3f4"
+            ]
+        ]
+    },
+    {
+        "id": "894dfcc8555154c3",
+        "type": "function",
+        "z": "05ce4787fe5d83e8",
+        "name": "function 4",
+        "func": "msg.payload = msg.payload.hum;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "4bdb9b8e83fe61a6"
+            ]
+        ]
+    },
+    {
+        "id": "238d296c5b9a7af0",
+        "type": "ui_gauge",
+        "z": "05ce4787fe5d83e8",
+        "name": "",
+        "group": "a232442e74cce007",
+        "order": 0,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Nhiệt độ",
+        "label": "°C",
+        "format": "{{value}} °C",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "fb63486bc0e5996e",
+        "type": "ui_gauge",
+        "z": "05ce4787fe5d83e8",
+        "name": "",
+        "group": "a232442e74cce007",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Flame",
+        "label": "0=No fire, 1=Fire",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "949450cb1b3ae3f4",
+        "type": "ui_gauge",
+        "z": "05ce4787fe5d83e8",
+        "name": "",
+        "group": "a232442e74cce007",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "MQ2 gas level",
+        "label": "ADC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4095",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 720,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4bdb9b8e83fe61a6",
+        "type": "ui_gauge",
+        "z": "05ce4787fe5d83e8",
+        "name": "",
+        "group": "a232442e74cce007",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Độ ẩm ",
+        "label": "%",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b0a0ef597a799a0a",
+        "type": "function",
+        "z": "05ce4787fe5d83e8",
+        "name": "function 5",
+        "func": "var d = msg.payload;\n\n// Flame: LOW = detected\nvar flameDetected = (d.flame === 0);\n\n// MQ2 gas:\nvar mq2Alarm = d.mq2_adc >= 1500;   // đặt ngưỡng tùy bạn\n\n// Nhiệt độ:\nvar tempAlarm = d.temp >= 60;\n\n// Tổng hợp alarm\nvar shouldAlarm = flameDetected || mq2Alarm || tempAlarm;\n\n// Luôn luôn tạo JSON cho dashboard\nmsg.payload = {\n    flame: flameDetected,\n    mq2: d.mq2_adc,\n    temp: d.temp,\n    hum: d.hum,\n    alarm: shouldAlarm ? \"on\" : \"off\"\n};\n\n// --- Nếu bạn NỐI node này sang dashboard thì return msg ở đây\n// Nếu bạn NỐI node này sang email thì xử lý bên dưới\n\n// Nếu bạn muốn gửi email khi có cháy:\nif (shouldAlarm) {\n    // email node cần: msg.topic + msg.payload (string)\n    msg.topic = \"🔥 FIRE ALERT !!!\";\n    msg.payload =\n        \"🔥 PHÁT HIỆN CHÁY!\\n\"\n        + \"- Ngọn lửa: \" + flameDetected + \"\\n\"\n        + \"- MQ2: \" + d.mq2_adc + \"\\n\"\n        + \"- Nhiệt độ: \" + d.temp + \"°C\\n\"\n        + \"- Độ ẩm: \" + d.hum + \"%\\n\"\n        + \"⚠ Hãy kiểm tra ngay lập tức!\";\n    return msg;\n}\n\n// Nếu không cháy → không gửi email\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 540,
+        "wires": [
+            [
+                "3904e589ba43f6ad"
+            ]
+        ]
+    },
+    {
+        "id": "3904e589ba43f6ad",
+        "type": "e-mail",
+        "z": "05ce4787fe5d83e8",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "tiennguyen.23052004@gmail.com",
+        "dname": "Cảnh_báo_cháy",
+        "x": 700,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "cb079cb9cf2d7dcc",
+        "type": "debug",
+        "z": "05ce4787fe5d83e8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 200,
+        "wires": []
+    }
+]
