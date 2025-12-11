@@ -70,7 +70,7 @@ Node-RED có thể gửi email:
 ![DashBoard](image/dashboard.png)
 ## 7. Demo
 
--   Video: 
+-   Video: Ấn vào đây ->
 [![Watch the video](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://youtube.com/shorts/vPlcSu__70M?feature=share)
 
 -   Hình ảnh: 
