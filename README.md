@@ -1,6 +1,6 @@
 # HỆ THỐNG CẢNH BÁO CHÁY THÔNG MINH
 
-## Nộp bài tập cuối kì 
+## Nộp bài tập cuối kì IOT APP DEVS
 -   Sinh viên thực hiện: Nguyễn Ngọc Tiến
 -   Ngành: Kỹ thuật điện tử và Tin học
 -   MSV: 22001357
@@ -71,7 +71,7 @@ Node-RED có thể gửi email:
 ## 7. Demo
 
 -   Video: 
-[![Video Demo](https://img.youtube.com/vi/1LuJUve667M/0.jpg)](https://youtube.com/shorts/1LuJUve667M)
+[![Watch the video](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://youtube.com/shorts/vPlcSu__70M?feature=share)
 
 -   Hình ảnh: 
 ![Ảnh DEMO](image/Ảnh_demo.jpg)
