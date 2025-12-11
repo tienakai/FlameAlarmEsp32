@@ -66,9 +66,9 @@ Node-RED có thể gửi email:
 ## 7. Demo
 
 -   Video: 
-![VIDEO DEMO](image/Video_demo.png)
+![VIDEO DEMO](image/Video_demo.mp4)
 -   Hình ảnh: 
-![Ảnh DEMO](image/Ảnh_demo.png)
+![Ảnh DEMO](image/Ảnh_demo.jpg)
 
 ## 8. Hướng dẫn chạy
 
