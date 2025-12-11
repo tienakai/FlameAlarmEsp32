@@ -65,8 +65,10 @@ Node-RED có thể gửi email:
 ![DashBoard](image/dashboard.png)
 ## 7. Demo
 
--   Video: /video/demo.mp4
--   Hình ảnh: /images/
+-   Video: 
+![VIDEO DEMO](image/Video_demo.png)
+-   Hình ảnh: 
+![Ảnh DEMO](image/Ảnh_demo.png)
 
 ## 8. Hướng dẫn chạy
 
