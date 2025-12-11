@@ -1,5 +1,10 @@
 # HỆ THỐNG CẢNH BÁO CHÁY THÔNG MINH
 
+## Nộp bài tập cuối kì 
+-   Sinh viên thực hiện: Nguyễn Ngọc Tiến
+-   Ngành: Kỹ thuật điện tử và Tin học
+-   MSV: 22001357
+
 ## 1. Giới thiệu & Đặt vấn đề
 
 Hỏa hoạn là một trong những tai nạn nguy hiểm gây thiệt hại lớn về người
@@ -66,7 +71,8 @@ Node-RED có thể gửi email:
 ## 7. Demo
 
 -   Video: 
-![VIDEO DEMO](image/Video_demo.mp4)
+[![Video Demo](https://img.youtube.com/vi/1LuJUve667M/0.jpg)](https://youtube.com/shorts/1LuJUve667M)
+
 -   Hình ảnh: 
 ![Ảnh DEMO](image/Ảnh_demo.jpg)
 
