@@ -151,9 +151,69 @@
         "tab": "df0bf498d8d0f3ca",
         "order": 1,
         "disp": true,
-        "width": "10",
+        "width": 14,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "99464a9aafd223e1",
+        "type": "ui_group",
+        "name": "Pump",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e61cd1cf40b1ed9",
+        "type": "ui_spacer",
+        "z": "05ce4787fe5d83e8",
+        "name": "spacer",
+        "group": "a232442e74cce007",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "571bc2f833cd7dd6",
+        "type": "ui_spacer",
+        "z": "05ce4787fe5d83e8",
+        "name": "spacer",
+        "group": "a232442e74cce007",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "7553d2bb31b781b5",
+        "type": "ui_spacer",
+        "z": "05ce4787fe5d83e8",
+        "name": "spacer",
+        "group": "a232442e74cce007",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "731487a1d5b509e2",
+        "type": "ui_spacer",
+        "z": "05ce4787fe5d83e8",
+        "name": "spacer",
+        "group": "a232442e74cce007",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "4ca147b9b9e67bbe",
+        "type": "ui_spacer",
+        "z": "05ce4787fe5d83e8",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": 4,
+        "height": 1
     },
     {
         "id": "c35f3ae0a04f50b5",
@@ -197,7 +257,7 @@
         "y": 160,
         "wires": [
             [
-                "238d296c5b9a7af0"
+                "182fa70b141cb902"
             ]
         ]
     },
@@ -214,10 +274,10 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 260,
+        "y": 220,
         "wires": [
             [
-                "fb63486bc0e5996e"
+                "4bd7af8cfd82e168"
             ]
         ]
     },
@@ -234,10 +294,10 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 360,
+        "y": 280,
         "wires": [
             [
-                "949450cb1b3ae3f4"
+                "9816415752ff08fc"
             ]
         ]
     },
@@ -246,7 +306,7 @@
         "type": "function",
         "z": "05ce4787fe5d83e8",
         "name": "function 4",
-        "func": "msg.payload = msg.payload.hum;\nreturn msg;\n",
+        "func": "msg.payload = msg.payload.hum;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -254,10 +314,10 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 460,
+        "y": 340,
         "wires": [
             [
-                "4bdb9b8e83fe61a6"
+                "9d512711cbd07abc"
             ]
         ]
     },
@@ -267,9 +327,9 @@
         "z": "05ce4787fe5d83e8",
         "name": "",
         "group": "a232442e74cce007",
-        "order": 0,
-        "width": "4",
-        "height": "4",
+        "order": 1,
+        "width": 4,
+        "height": 4,
         "gtype": "gage",
         "title": "Nhiệt độ",
         "label": "°C",
@@ -285,8 +345,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 700,
-        "y": 140,
+        "x": 840,
+        "y": 160,
         "wires": []
     },
     {
@@ -295,9 +355,9 @@
         "z": "05ce4787fe5d83e8",
         "name": "",
         "group": "a232442e74cce007",
-        "order": 3,
-        "width": "4",
-        "height": "4",
+        "order": 7,
+        "width": 4,
+        "height": 4,
         "gtype": "gage",
         "title": "Flame",
         "label": "0=No fire, 1=Fire",
@@ -313,8 +373,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 690,
-        "y": 240,
+        "x": 830,
+        "y": 220,
         "wires": []
     },
     {
@@ -323,9 +383,9 @@
         "z": "05ce4787fe5d83e8",
         "name": "",
         "group": "a232442e74cce007",
-        "order": 2,
-        "width": "4",
-        "height": "4",
+        "order": 9,
+        "width": 4,
+        "height": 4,
         "gtype": "gage",
         "title": "MQ2 gas level",
         "label": "ADC",
@@ -341,8 +401,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 720,
-        "y": 340,
+        "x": 860,
+        "y": 280,
         "wires": []
     },
     {
@@ -351,9 +411,9 @@
         "z": "05ce4787fe5d83e8",
         "name": "",
         "group": "a232442e74cce007",
-        "order": 1,
-        "width": "4",
-        "height": "4",
+        "order": 3,
+        "width": 4,
+        "height": 4,
         "gtype": "gage",
         "title": "Độ ẩm ",
         "label": "%",
@@ -369,8 +429,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 690,
-        "y": 460,
+        "x": 830,
+        "y": 340,
         "wires": []
     },
     {
@@ -378,7 +438,7 @@
         "type": "function",
         "z": "05ce4787fe5d83e8",
         "name": "function 5",
-        "func": "var d = msg.payload;\n\n// Flame: LOW = detected\nvar flameDetected = (d.flame === 0);\n\n// MQ2 gas:\nvar mq2Alarm = d.mq2_adc >= 1500;   // đặt ngưỡng tùy bạn\n\n// Nhiệt độ:\nvar tempAlarm = d.temp >= 60;\n\n// Tổng hợp alarm\nvar shouldAlarm = flameDetected || mq2Alarm || tempAlarm;\n\n// Luôn luôn tạo JSON cho dashboard\nmsg.payload = {\n    flame: flameDetected,\n    mq2: d.mq2_adc,\n    temp: d.temp,\n    hum: d.hum,\n    alarm: shouldAlarm ? \"on\" : \"off\"\n};\n\n// --- Nếu bạn NỐI node này sang dashboard thì return msg ở đây\n// Nếu bạn NỐI node này sang email thì xử lý bên dưới\n\n// Nếu bạn muốn gửi email khi có cháy:\nif (shouldAlarm) {\n    // email node cần: msg.topic + msg.payload (string)\n    msg.topic = \"🔥 FIRE ALERT !!!\";\n    msg.payload =\n        \"🔥 PHÁT HIỆN CHÁY!\\n\"\n        + \"- Ngọn lửa: \" + flameDetected + \"\\n\"\n        + \"- MQ2: \" + d.mq2_adc + \"\\n\"\n        + \"- Nhiệt độ: \" + d.temp + \"°C\\n\"\n        + \"- Độ ẩm: \" + d.hum + \"%\\n\"\n        + \"⚠ Hãy kiểm tra ngay lập tức!\";\n    return msg;\n}\n\n// Nếu không cháy → không gửi email\nreturn null;\n",
+        "func": "var d = msg.payload;\n\n// Flame: rất nhiều module trả HIGH khi phát hiện lửa\nvar flameDetected = (d.flame !== 0);\n\n// MQ2 gas:\nvar mq2Alarm = d.mq2_adc >= 2800;\n\n// Nhiệt độ:\nvar tempAlarm = d.temp >= 60;\n\n// Tổng hợp alarm\nvar shouldAlarm = flameDetected || mq2Alarm || tempAlarm;\n\n// Debug thử\nnode.warn(\"flame=\" + d.flame + \"  detected=\" + flameDetected);\n\nif (shouldAlarm) {\n    msg.topic = \"🔥 FIRE ALERT !!!\";\n    msg.payload =\n        \"🔥 PHÁT HIỆN CHÁY!\\n\"\n        + \"- Ngọn lửa: \" + flameDetected + \"\\n\"\n        + \"- MQ2: \" + d.mq2_adc + \"\\n\"\n        + \"- Nhiệt độ: \" + d.temp + \"°C\\n\"\n        + \"- Độ ẩm: \" + d.hum + \"%\\n\"\n        + \"⚠ Hãy kiểm tra ngay lập tức!\";\n    return msg;\n}\n\n// Không gửi email nếu không có cháy\nreturn null;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -386,7 +446,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 540,
+        "y": 400,
         "wires": [
             [
                 "3904e589ba43f6ad"
@@ -406,8 +466,8 @@
         "tls": true,
         "name": "tiennguyen.23052004@gmail.com",
         "dname": "Cảnh_báo_cháy",
-        "x": 700,
-        "y": 540,
+        "x": 740,
+        "y": 400,
         "wires": []
     },
     {
@@ -423,8 +483,100 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
-        "y": 200,
+        "x": 460,
+        "y": 480,
         "wires": []
+    },
+    {
+        "id": "4bd7af8cfd82e168",
+        "type": "ui_template",
+        "z": "05ce4787fe5d83e8",
+        "group": "a232442e74cce007",
+        "name": "template2",
+        "order": 8,
+        "width": 3,
+        "height": 3,
+        "format": "<div id=\"flameIcon\" class=\"flame-normal\">\n    🔥\n</div>\n\n<style>\n    #flameIcon {\n        font-size: 60px;\n        text-align: center;\n        transition: 0.3s ease;\n    }\n\n    /* Normal */\n    .flame-normal {\n        color: grey;\n        text-shadow: none;\n    }\n\n    /* Warning - vàng */\n    .flame-warning {\n        color: orange;\n        text-shadow: 0 0 10px orange;\n    }\n\n    /* Fire - đỏ nhấp nháy */\n    @keyframes fireBlink {\n        0% {\n            color: red;\n            text-shadow: 0 0 20px red;\n        }\n\n        50% {\n            color: darkred;\n            text-shadow: 0 0 5px red;\n        }\n\n        100% {\n            color: red;\n            text-shadow: 0 0 20px red;\n        }\n    }\n\n    .flame-danger {\n        animation: fireBlink 0.8s infinite;\n    }\n</style>\n\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (!msg) return;\n\n        let icon = document.getElementById(\"flameIcon\");\n\n        if (msg.payload === \"normal\") {\n            icon.className = \"flame-normal\";\n        }\n        else if (msg.payload === \"warning\") {\n            icon.className = \"flame-warning\";\n        }\n        else if (msg.payload === \"fire\") {\n            icon.className = \"flame-danger\";\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 220,
+        "wires": [
+            [
+                "fb63486bc0e5996e"
+            ]
+        ]
+    },
+    {
+        "id": "182fa70b141cb902",
+        "type": "ui_template",
+        "z": "05ce4787fe5d83e8",
+        "group": "a232442e74cce007",
+        "name": "template1",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "format": "<div id=\"iconTemp\" class=\"ok\">🌡</div>\n\n<style>\n    #iconTemp {\n        font-size: 55px;\n        text-align: center;\n        transition: 0.3s;\n    }\n\n    #iconTemp.ok {\n        color: green;\n    }\n\n    #iconTemp.warn {\n        color: orange;\n        text-shadow: 0 0 10px orange;\n    }\n\n    #iconTemp.hot {\n        color: red;\n        animation: tempBlink 1s infinite;\n    }\n\n    @keyframes tempBlink {\n        0% {\n            color: red;\n        }\n\n        50% {\n            color: darkred;\n        }\n\n        100% {\n            color: red;\n        }\n    }\n</style>\n\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (!msg || !msg.payload) return;\n\n        let el = document.getElementById(\"iconTemp\");\n        let temp = msg.payload.temp;\n\n        // Ngưỡng nhiệt độ — chỉnh tùy ý\n        if (temp < 40) {\n            el.className = \"ok\";        // Bình thường\n        }\n        else if (temp >= 40 && temp < 60) {\n            el.className = \"warn\";      // Cảnh báo nóng\n        }\n        else {\n            el.className = \"hot\";       // Nguy hiểm\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [
+                "238d296c5b9a7af0"
+            ]
+        ]
+    },
+    {
+        "id": "9d512711cbd07abc",
+        "type": "ui_template",
+        "z": "05ce4787fe5d83e8",
+        "group": "a232442e74cce007",
+        "name": "template3",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "format": "<style>\n    #humidity-container {\n        display: flex;\n        justify-content: center;\n        margin-top: 10px;\n    }\n\n    .hum-icon {\n        width: 60px;\n        height: 60px;\n        position: relative;\n    }\n\n    .hum-icon svg {\n        width: 100%;\n        height: 100%;\n        transition: 0.3s ease;\n    }\n\n    .alarm {\n        animation: blink 1s infinite;\n    }\n\n    @keyframes blink {\n        0% {\n            opacity: 1;\n        }\n\n        50% {\n            opacity: 0.4;\n        }\n\n        100% {\n            opacity: 1;\n        }\n    }\n</style>\n\n<div id=\"humidity-container\">\n    <div class=\"hum-icon\">\n        <svg id=\"humidityIcon\" viewBox=\"0 0 24 24\">\n            <path d=\"M12 2C12 2 6 9 6 13.5C6 17.09 8.91 20 12.5 20C16.09 20 19 17.09 19 13.5C19 9 12 2 12 2Z\" />\n        </svg>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n\n    scope.$watch('msg', function(msg) {\n        if (!msg) return;\n\n        let icon = document.getElementById(\"humidityIcon\");\n\n        if (msg.payload.alarm === true) {\n            icon.style.fill = \"#E53935\";   // 🔴 chuyển đỏ khi cảnh báo\n            icon.classList.add(\"alarm\");   // ✨ nhấp nháy\n        } \n        else {\n            icon.style.fill = \"#03A9F4\";   // 🔵 bình thường\n            icon.classList.remove(\"alarm\");\n        }\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "4bdb9b8e83fe61a6"
+            ]
+        ]
+    },
+    {
+        "id": "9816415752ff08fc",
+        "type": "ui_template",
+        "z": "05ce4787fe5d83e8",
+        "group": "a232442e74cce007",
+        "name": "",
+        "order": 10,
+        "width": 3,
+        "height": 3,
+        "format": "<div id=\"iconGas\" class=\"ok\">💨</div>\n\n<style>\n    #iconGas {\n        font-size: 55px;\n        text-align: center;\n        transition: 0.3s;\n    }\n\n    /* Mức bình thường */\n    #iconGas.ok {\n        color: #2ecc71;\n        /* xanh lá */\n        text-shadow: none;\n    }\n\n    /* Mức cảnh báo nhẹ */\n    #iconGas.warn {\n        color: #f39c12;\n        /* cam */\n        text-shadow: 0 0 10px #f39c12;\n    }\n\n    /* Mức nguy hiểm */\n    #iconGas.danger {\n        color: #e74c3c;\n        /* đỏ */\n        text-shadow: 0 0 15px #e74c3c;\n        animation: gasBlink 1s infinite;\n    }\n\n    @keyframes gasBlink {\n        0% {\n            color: #e74c3c;\n        }\n\n        50% {\n            color: darkred;\n        }\n\n        100% {\n            color: #e74c3c;\n        }\n    }\n</style>\n\n<script>\n    (function(scope){\n    scope.$watch('msg', function(msg){\n        if (!msg || !msg.payload) return;\n\n        let gas = msg.payload.gas;  // giá trị MQ2 ADC\n        let el = document.getElementById(\"iconGas\");\n\n        if (gas < 1000) {\n            el.className = \"ok\";       // An toàn\n        } \n        else if (gas < 2500) {\n            el.className = \"warn\";     // Cảnh báo nhẹ\n        } \n        else {\n            el.className = \"danger\";   // Nguy hiểm\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "949450cb1b3ae3f4"
+            ]
+        ]
     }
 ]

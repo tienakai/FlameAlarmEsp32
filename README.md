@@ -61,6 +61,8 @@ Node-RED có thể gửi email:
 -   Nội dung cảnh báo
 -   Trạng thái cảm biến 
 -   Thời gian xảy ra cảnh báo 
+![Code NODERED](image/NodeRED.png)
+![DashBoard](image/dashboard.png)
 ## 7. Demo
 
 -   Video: /video/demo.mp4
@@ -68,7 +70,7 @@ Node-RED có thể gửi email:
 
 ## 8. Hướng dẫn chạy
 
-git clone `<repo>`{=html}\
+git clone `<repo>`\
 Mở bằng PlatformIO\
 Cấu hình WiFi & MQTT trong config.h\
 Upload code vào ESP32\

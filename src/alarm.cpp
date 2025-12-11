@@ -9,7 +9,7 @@ void alarm_setup() {
 
   digitalWrite(PIN_BUZZER, LOW);
   digitalWrite(PIN_LED, LOW);
-  digitalWrite(PIN_RELAY_PUMP, LOW);
+  digitalWrite(PIN_RELAY_PUMP, HIGH);
 }
 
 void alarm_set(bool on) {

@@ -23,6 +23,7 @@ extern const char* WIFI_PASSWORD;
 #define PIN_LED          33
 #define PIN_RELAY_PUMP   12
 
+
 // --- Thresholds ---
 #define BASELINE_MQ2       200
 #define THRESH_MQ2_WARN   1000
